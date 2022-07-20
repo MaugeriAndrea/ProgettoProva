@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Front-End</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+    <div class="contenitore">
+        <div>
+        <input type="email" name="email" id="email" placeholder="Inserire email" required class="ordine"><br>
+        <input type="password" name="pass" id="pass" placeholder="inserire password" onkeyup="validazione()" required class="ordine"><br>
+        <button type="button" onclick="login()" class="bottone2">Login</button>
+     <div class="testo">
+        <p id="min">La password deve avere almeno un carattere minuscolo</p>
+        <p id="max">La password deve avere almeno un carattere maiuscolo</p>
+        <p id="num">La password deve avere almeno un carattere numerico</p>
+        <p id="spec">La password deve avere almeno un carattere speciale</p>
+        <p id="lun">La password deve essere almeno 8 caratteri di lunghezza</p>
+    </div>
+     </div>
+    </div>
+    
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./scripts.js"></script>
+</body>
+</html>
